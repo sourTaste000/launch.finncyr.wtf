@@ -9,7 +9,7 @@ function initSearchBar() {
     document.getElementById("search-bar-input").addEventListener("keypress", (event) => {
         if (event.key != 'Enter') return
 
-        googleSearchUrl = "https://www.google.de/search?q="
+        googleSearchUrl = "https://www.google.com/search?q="
         otherThing = "&atb=v225-7&ia=web"
         query = document.getElementById("search-bar-input").value.replace(/\ /g, "+")
         document.location = googleSearchUrl + query
